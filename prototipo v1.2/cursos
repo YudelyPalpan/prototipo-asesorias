@@ -27,20 +27,10 @@
                 <!-- Logo -->
                 <li>
                     <div class="logo-wrapper waves-light waves-effect waves-light">
-                        <a href="mis_cursos.html"><img src="img/img-logo.png" class="img-fluid flex-center"></a>
+                        <a href="index.html"><img src="img/img-logo.png" class="img-fluid flex-center"></a>
                     </div>
                 </li>
-                <!--/. Logo -->
-                <!--Social-->
-                <li>
-                    <ul class="social">
-                        <li><a href="#" class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a></li>
-                        <li><a href="#" class="icons-sm pin-ic"><i class="fa fa-pinterest"> </i></a></li>
-                        <li><a href="#" class="icons-sm gplus-ic"><i class="fa fa-google-plus"> </i></a></li>
-                        <li><a href="#" class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a></li>
-                    </ul>
-                </li>
-                
+                <!--/. Logo -->                
                 <li>
                     <ul class="collapsible collapsible-accordion">
                         <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-chevron-right"></i> Asesorías<i class="fa fa-angle-down rotate-icon"></i></a>
@@ -95,9 +85,6 @@
                 <li class="nav-item">
                     <a class="nav-link waves-effect waves-light"><i class="fa fa-envelope"></i> <span class="clearfix d-none d-sm-inline-block">Contactanos</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link waves-effect waves-light"><i class="fa fa-comments-o"></i> <span class="clearfix d-none d-sm-inline-block">Soporte</span></a>
-                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle waves-effect waves-light" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="fa fa-user"></i><span class="clearfix d-none d-sm-inline-block">Mi Cuenta</span>
@@ -116,114 +103,112 @@
     
     <!--Main layout-->
     <main>
-        
         <div class="container-fluid text-center">
-
+            <div class="container">                
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control form-control-lg" placeholder="Ingrese un tema" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-primary btn-m" type="button">Buscar</button>
+                  </div>
+                </div>                               
+            </div>
+            <div class="container">                
+                
+                    <div class="form-group mb-5">
+                        <label for="selectArea">Seleccione el área</label>
+                        <select class="form-control visible" id="selectArea">
+                          <option>Ingeniería</option>
+                          <option>Ciencias Sociales</option>
+                          <option>Ciencias de la Salud</option>
+                          <option>Humanidades</option>
+                        </select>
+                    </div>     
+                
+               
+                    <div class="form-group mb-5">
+                        <label for="selectCarrera">Seleccione una carrera</label>
+                        <select class="form-control visible" id="selectCarrera">
+                          <option>Ingeniería</option>
+                          <option>Ciencias Sociales</option>
+                          <option>Ciencias de la Salud</option>
+                          <option>Humanidades</option>
+                        </select>
+                    </div>     
+                         
+            </div>
+            
+            
             <!--Card-->
-            <div class="card">
+            <div class="card invisible">
                 <div class="row">
                     <!--Card content-->
                     <div class="card-body">
-                        <h5 class="card-title display-4">Buscar Cursos</h5>
-                        <!-- Search form -->
-                        <center><form class="form-inline">
-                            <i class="fa fa-search ml-5 mb-5" aria-hidden="true"></i>
-                            <input class="form-control form-control-sm ml-2 w-75 mb-5" type="text" placeholder="Search" aria-label="Search">
-                        </form></center>
-
-                        <!--Blue select-->
-                        <select class="mdb-select colorful-select dropdown-primary" searchable="Search here..">
-                            <option value="1">Ingenierías</option>
-                            <option value="2">Humanidaes</option>
-                            <option value="3">Ciencias Básicas</option>
-                        </select>
-                        <label>Áreas</label>
-
-                        <!--Blue select-->
-                        <select class="mdb-select colorful-select dropdown-primary" searchable="Search here..">
-                            <option value="1">Ing. de Sistemas</option>
-                            <option value="2">Ciencias Físicas</option>
-                            <option value="3">Educación</option>
-                            <option value="4">Ciencias Economicas</option>
-                            <option value="5">Ciencias Matemáticas</option>
-                        </select>
-                        <label>Carrera</label>
+                        <h5 class="card-title display-4">Cursos Disponibles</h5>
                     </div>
+
                     <!--/.Card content-->
                 </div>
                 
                 <div class="card-deck">
-                    
-                    <!-- Card -->
-                    <div class="card mb-4">
-                          <!-- Card image -->
-                          <div class="view overlay">
-                            <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap">
-                            <a href="#!">
-                                <div class="mask rgba-white-slight"></div>
-                            </a>
-                          </div>
+                    <!-- tutor 1 -->
+                        <div class="card mb-4">
+                            <div class="card testimonial-card">
+                                <!-- Bacground color -->
+                                <div class="card-up indigo lighten-1"></div>
+                                <!-- Avatar -->
+                                <div class="avatar mx-auto white">
+                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle">
+                                </div>
+                                <div class="card-body">
+                                    <!-- Name -->
+                                    <h4 class="card-title">Curso 1</h4>
+                                    <hr>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quaerat placeat quas eum aspernatur molestiae ipsa.</p>
+                                      <button type="button" class="btn btn-light-blue btn-md">Ver Horario</button>
+                                </div>
+                            </div>
+                        </div>
 
-                          <!-- Card content -->
-                          <div class="card-body">
-
-                            <!-- Title -->
-                            <h4 class="card-title">Curso 1</h4>
-                            <!-- Text -->
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur modi sint fugit, enim odio asperiores minima nihil magni, repellendus assumenda repudiandae, quo. Magni optio asperiores non ipsa vitae culpa reiciendis.</p>
-                            <!-- Button -->
-                            <a href="./tutores.html" class="btn btn-primary">Ver Más</a>
-
-                          </div>
+                    <!-- tutor 2 -->
+                        <div class="card mb-4">
+                           <div class="card testimonial-card">
+                                <!-- Bacground color -->
+                                <div class="card-up indigo lighten-1"></div>
+                                <!-- Avatar -->
+                                <div class="avatar mx-auto white">
+                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle">
+                                </div>
+                                <div class="card-body">
+                                    <!-- Name -->
+                                    <h4 class="card-title">Curso 2</h4>
+                                    <hr>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quaerat placeat quas eum aspernatur molestiae ipsa.</p>
+                                      <button type="button" class="btn btn-light-blue btn-md">Ver Horario</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- tutor 1 -->
+                        <div class="card mb-4">
+                            <div class="card testimonial-card">
+                                <!-- Bacground color -->
+                                <div class="card-up indigo lighten-1"></div>
+                                <!-- Avatar -->
+                                <div class="avatar mx-auto white">
+                                    <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-circle">
+                                </div>
+                                <div class="card-body">
+                                    <!-- Name -->
+                                    <h4 class="card-title">Curso 3</h4>
+                                    <hr>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quaerat placeat quas eum aspernatur molestiae ipsa.</p>
+                                      <button type="button" class="btn btn-light-blue btn-md">Ver Horario</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <!-- Card -->
-                    <!-- Card -->
-                    <div class="card mb-4">
-                          <!-- Card image -->
-                          <div class="view overlay">
-                            <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap">
-                            <a href="#!">
-                                <div class="mask rgba-white-slight"></div>
-                            </a>
-                          </div>
-
-                          <!-- Card content -->
-                          <div class="card-body">
-
-                            <!-- Title -->
-                            <h4 class="card-title">Curso 2</h4>
-                            <!-- Text -->
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa molestiae, nostrum, officiis sapiente tenetur aut soluta quae ea atque fuga. Quisquam placeat aliquid cumque et officiis, impedit tempora cupiditate adipisci!</p>
-                            <!-- Button -->
-                            <a href="./tutores.html" class="btn btn-primary">Ver Más</a>
-
-                          </div>
-                    </div>
-                    <!-- Card -->
-                    <!-- Card -->
-                    <div class="card mb-4">
-                          <!-- Card image -->
-                          <div class="view overlay">
-                            <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap">
-                            <a href="#!">
-                                <div class="mask rgba-white-slight"></div>
-                            </a>
-                          </div>
-
-                          <!-- Card content -->
-                          <div class="card-body">
-
-                            <!-- Title -->
-                            <h4 class="card-title">Curso 3</h4>
-                            <!-- Text -->
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione et fuga, quas explicabo asperiores. Libero accusantium sit porro cum, perspiciatis quasi unde exercitationem blanditiis reprehenderit aliquid vel assumenda repellendus maxime!</p>
-                            <!-- Button -->
-                            <a href="./tutores.html" class="btn btn-primary">Ver Más</a>
-
-                          </div>
-                    </div>
-                    <!-- Card -->
                 </div>
+            </div>
+            <!--/.Card-->
         </div>
         
     </main>
