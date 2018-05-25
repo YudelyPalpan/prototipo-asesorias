@@ -8,7 +8,9 @@
 body {
    font-family: 'Nunito Sans', sans-serif;
 }
-
+.text-indigo {
+    color: #435189;
+}
 .main-title {
    text-align: left;
 }
