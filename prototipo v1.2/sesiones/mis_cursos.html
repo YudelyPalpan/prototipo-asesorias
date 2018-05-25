@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Prototipo v1.2</title>
+    <title>Mis Cursos</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.png"/>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="../css/font-awesome.css">
@@ -100,7 +103,10 @@
             <!-- Breadcrumb-->
             <div class="mr-auto">
                 <ol class="breadcrumb clearfix d-none d-md-inline-flex pt-0">
-                    <li class="breadcrumb-item active">Mis Cursos</li>
+                    <li class="breadcrumb-item active">
+                        <i class="fa fa-book"></i>
+                        Mis Cursos
+                    </li>
                 </ol>
             </div>
             <ul class="nav navbar-nav nav-flex-icons ml-auto">
@@ -132,7 +138,7 @@
             <div class="row">
                 <div class="col-md-12 my-4">
                     <header>
-                        <h1 class="main-title">Mis cursos <i class="fa fa-book"></i></h1>
+                        <h1 class="main-title"><i class="fa fa-book"></i> Mis cursos</h1>
                     </header>
                 </div>
                 <div class="col-md-4 mb-5">
@@ -211,7 +217,32 @@
 
         // Inicializar calendar
         $('#calendar').fullCalendar({
-            aspectRatio: 1.57
+            aspectRatio: 1.57,
+            eventSources : [
+                {
+                    events: [
+                        {
+                            title: "Algoritmica 3",
+                            start: "2018-05-24",
+                        },
+                        {
+                            title: "Interfaz Hombre Computador",
+                            start: "2018-05-25"
+                        },
+                        {
+                            title: "Base de Datos 3",
+                            start: "2018-05-28"
+                        },
+                        {
+                            title: "Inteligencia Artificial",
+                            start: "2018-05-29"
+                        }
+                    ],
+                    color: "#435189",
+                    textColor: "white"
+                }
+            ]
+            
         });
     </script>
     <div class="drag-target" style="left: 0px; touch-action: pan-y; -moz-user-select: none;"></div>
