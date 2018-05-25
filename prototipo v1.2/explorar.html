@@ -116,44 +116,48 @@
     
     <!--Main layout-->
     <main>
-        
-        <div class="container-fluid text-center">
-
-            <!--Card-->
-            <div class="card">
-                <div class="row">
-                    <!--Card content-->
+        <div class="container-fluid">
+            <div class="row">
+                <header class="col-md-12 mb-3">
+                    <center>
+                        <h1 class="main-title">
+                            <!--<i class="material-icons">book</i>--> 
+                            Buscar Cursos 
+                            <!-- Search form -->
+                            <form class="form-inline md-form form-sm">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                                <input class="form-control form-control-sm ml-3 w-75" type="text" 
+                                placeholder="Search" aria-label="Search">
+                            </form>
+                        </h1>
+                    </center>
+                </header>
+           </div>
+           <div class="row">
                     <div class="card-body">
-                        <h5 class="card-title display-4">Buscar Cursos</h5>
-                        <!-- Search form -->
-                        <center><form class="form-inline">
-                            <i class="fa fa-search ml-5 mb-5" aria-hidden="true"></i>
-                            <input class="form-control form-control-sm ml-2 w-75 mb-5" type="text" placeholder="Search" aria-label="Search">
-                        </form></center>
-
-                        <!--Blue select-->
-                        <select class="mdb-select colorful-select dropdown-primary" searchable="Search here..">
-                            <option value="1">Ingenierías</option>
-                            <option value="2">Humanidaes</option>
-                            <option value="3">Ciencias Básicas</option>
-                        </select>
-                        <label>Áreas</label>
-
-                        <!--Blue select-->
-                        <select class="mdb-select colorful-select dropdown-primary" searchable="Search here..">
-                            <option value="1">Ing. de Sistemas</option>
-                            <option value="2">Ciencias Físicas</option>
-                            <option value="3">Educación</option>
-                            <option value="4">Ciencias Economicas</option>
-                            <option value="5">Ciencias Matemáticas</option>
-                        </select>
-                        <label>Carrera</label>
+                        <div class = "row">
+                            <div class="col-md-6">
+                                    <!--Blue select-->
+                                    <select class="mdb-select" searchable="Search here..">
+                                        <option value="1">Ingenierías</option>
+                                        <option value="2">Humanidaes</option>
+                                        <option value="3">Ciencias Básicas</option>
+                                    </select>
+                            </div>
+                            <div class="col-md-6">
+                                    <!--Blue select-->
+                                    <select class="mdb-select" searchable="Search here..">
+                                        <option value="1">Ing. de Sistemas</option>
+                                        <option value="2">Ciencias Físicas</option>
+                                        <option value="3">Educación</option>
+                                        <option value="4">Ciencias Economicas</option>
+                                        <option value="5">Ciencias Matemáticas</option>
+                                    </select>
+                            </div>
+                        </div>
                     </div>
-                    <!--/.Card content-->
-                </div>
-                
+            </div>
                 <div class="card-deck">
-                    
                     <!-- Card -->
                     <div class="card mb-4">
                           <!-- Card image -->
@@ -222,10 +226,8 @@
 
                           </div>
                     </div>
-                    <!-- Card -->
                 </div>
         </div>
-        
     </main>
     <!--/Main layout-->
 
@@ -268,8 +270,10 @@
 
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.js"></script>
+    
+    <script type="text/javascript" src="js/script.js"></script>
+   
     <script>
-
         // SideNav Initialization
         $(".button-collapse").sideNav();
         
