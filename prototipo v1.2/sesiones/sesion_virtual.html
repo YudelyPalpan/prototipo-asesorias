@@ -7,19 +7,22 @@
     <title>Prototipo v1.2</title>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
 
     <!-- Material Design Bootstrap -->
-    <link href="css/mdb.css" rel="stylesheet">
+    <link href="../css/mdb.css" rel="stylesheet">
 
     <!-- Material Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/styles.css">
-    
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Calendar -->
+    <link rel="stylesheet" href="../css/fullcalendar.min.css">
 </head>
 
 <body class="fixed-sn indigo-skin">
@@ -32,7 +35,7 @@
                 <!-- Logo -->
                 <li>
                     <div class="logo-wrapper waves-light waves-effect waves-light">
-                        <a href="./index.html"><img src="img/img-logo.png" class="img-fluid flex-center"></a>
+                        <a href="../index.html"><img src="../img/img-logo.png" class="img-fluid flex-center"></a>
                     </div>
                 </li>
                 <!--/. Logo -->
@@ -49,12 +52,14 @@
                 <!-- Side navigation links -->
                 <li>
                     <ul class="collapsible collapsible-accordion">
-                        <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-chevron-right"></i> Asesorías<i class="fa fa-angle-down rotate-icon"></i></a>
+                        <li>
+                           <a class="collapsible-header waves-effect arrow-r">
+                              <i class="fa fa-chevron-right"></i> Asesorías<i class="fa fa-angle-down rotate-icon"></i></a>
                             <div class="collapsible-body">
                                 <ul class="list-unstyled">
-                                    <li><a href="./mis_cursos.html" class="waves-effect">Mis cursos</a>
+                                    <li><a href="../mis_cursos.html" class="waves-effect">Mis cursos</a>
                                     </li>
-                                    <li><a href="./retos.html" class="waves-effect">Retos</a>
+                                    <li><a href="../retos.html" class="waves-effect">Retos</a>
                                     </li>
                                 </ul>
                             </div>
@@ -93,10 +98,12 @@
             <div class="float-left">
                 <a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars"></i></a>
             </div>
-            <!-- Breadcrumb-->
-            <div class="breadcrumb-dn mr-auto">
-                <p>Mis Cursos</p>
-            </div>
+            <div class="mr-auto">
+                  <ol class="breadcrumb clearfix d-none d-md-inline-flex pt-0">
+                      <li class="breadcrumb-item"><a class="white-text" href="#!">Mis Cursos</a></li>
+                      <li class="breadcrumb-item active">Algorítmica 3</li>
+                  </ol>
+              </div>
             <ul class="nav navbar-nav nav-flex-icons ml-auto">
                 <li class="nav-item">
                     <a class="nav-link waves-effect waves-light"><i class="fa fa-envelope"></i> <span class="clearfix d-none d-sm-inline-block">Contactanos</span></a>
@@ -124,70 +131,105 @@
     <main>
         <div class="container-fluid">
             <div class="row">
-                <header class="col-md-12 mb-3">
-                    <h1 class="main-title">
-                        <!--<i class="material-icons">book</i>--> 
-                        Mis cursos <i class="fa fa-book"></i>
-                    </h1>
-                </header>
-                <div class="col-md-3">
-                    <div class="list-group">
-                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+               <div class="col-md-12 my-4">
+                  <header >
+                     <h1 class="main-title">Algorítmica 3</h1>
+                  </header>
+               </div>
+                <div class="col-md-4 mb-5">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item flex-column align-items-start">
+                           <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">Descripción</h5>
+                           </div>
+                           <p class="mb-1">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                              Fuga consectetur, nihil blanditiis illum aut ea ducimus 
+                              quisquam minima accusamus dicta dolore perferendis beatae
+                              voluptatem recusandae ab excepturi magni delectus est.
+                           </p>
+                        </li>
+                        <li class="list-group-item  flex-column align-items-start">
                             <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">Algorítmica 3</h5>
-                            <small>Hace 3 días</small>
+                               <h5 class="mb-1">Tutor</h5>
                             </div>
                             <p class="mb-1">
-                                Se subió un nuevo reto para el curso, puedes verificarlo en la pestaña 'Retos'
+                               Juan Espinoza
                             </p>
-                            <small>Visto por todos</small>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                           </li>
+                        <li class="list-group-item flex-column align-items-start">
                             <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">Interfaz Hombre Computador</h5>
-                            <small>Hace 4 días</small>
+                              <h5 class="mb-1">Tema</h5>
                             </div>
                             <p class="mb-1">
-                                Se subió un nuevo reto para el curso, puedes verificarlo en la pestaña 'Retos'
+                                Tema 1
                             </p>
-                            <small>Visto por 15</small>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        </li>
+                        <li class="list-group-item flex-column align-items-start">
                             <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">Base de Datos 3</h5>
-                            <small>Hace 5 días</small>
+                              <h5 class="mb-1">Horario</h5>
                             </div>
                             <p class="mb-1">
-                                Se subió un nuevo reto para el curso, puedes verificarlo en la pestaña 'Retos'
+                                 14:00 - 16:00
                             </p>
-                            <small>Visto por 10</small>
-                        </a>
+                        </li>
+                        <li href="#" class="list-group-item  flex-column align-items-start">
+                            <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Fecha</h5>
+                            </div>
+                            <p class="mb-1">
+                              12-08-18
+                            </p>
+                        </li>
                     </div>
+                  </ul>
+                <div class="col-md-8 mb-5">
+                   <div class="container-fluid">
+                      <div class="row">
+                         <div class="col-12 mb-4">
+                              <div class="embed-responsive embed-responsive-16by9">
+                                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wTcNtgA6gHs" allowfullscreen></iframe>
+                              </div>
+                         </div>
+                         <div class="col-12 text-center">
+                              <button class="btn btn-primary">
+                                 <i class="fa fa-download mr-1"></i> Descargar
+                              </button>
+                              <button class="btn btn-primary">
+                                 <i class="fa fa-cloud mr-1"></i> Almacenar
+                              </button>
+                         </div>
+                      </div>
+                   </div>
                 </div>
             </div>
         </div>
     </main>
     <!--/Main layout-->
+
+
     <!-- SCRIPTS -->
     <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.js"></script>
+    <script type="text/javascript" src="../js/jquery-3.js"></script>
 
     <!-- Tooltips -->
-    <script type="text/javascript" src="js/popper.js"></script>
+    <script type="text/javascript" src="../js/popper.js"></script>
 
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+
+    <script type="text/javascript" src="../js/moment.min.js"></script>
+
+    <script type="text/javascript" src="../js/fullcalendar.min.js"></script>
 
     <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.js"></script>
+    <script type="text/javascript" src="../js/mdb.js"></script>
     <script>
-
         // SideNav Initialization
         $(".button-collapse").sideNav();
-        
         new WOW().init();
-    
     </script>
     <div class="drag-target" style="left: 0px; touch-action: pan-y; -moz-user-select: none;"></div>
 
-<div class="hiddendiv common"></div><div id="simple-translate-button" style="display: none;"></div><div id="simple-translate-panel" style="display: none;"><p>...</p></div></body></html>
+<div class="hiddendiv common"></div>
+<div id="simple-translate-button" style="display: none;"></div><div id="simple-translate-panel" style="display: none;"><p>...</p></div></body></html>
