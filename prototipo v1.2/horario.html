@@ -19,6 +19,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Calendar -->
+    <link rel="stylesheet" href="css/fullcalendar.min.css">
     
 </head>
 
@@ -32,7 +35,7 @@
                 <!-- Logo -->
                 <li>
                     <div class="logo-wrapper waves-light waves-effect waves-light">
-                        <a href="./index.html"><img src="img/img-logo.png" class="img-fluid flex-center"></a>
+                        <a href="index.html"><img src="img/img-logo.png" class="img-fluid flex-center"></a>
                     </div>
                 </li>
                 <!--/. Logo -->
@@ -52,9 +55,9 @@
                         <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-chevron-right"></i> Asesorías<i class="fa fa-angle-down rotate-icon"></i></a>
                             <div class="collapsible-body">
                                 <ul class="list-unstyled">
-                                    <li><a href="./mis_cursos.html" class="waves-effect">Mis cursos</a>
+                                    <li><a href="mis_cursos.html" class="waves-effect">Mis cursos</a>
                                     </li>
-                                    <li><a href="./retos.html" class="waves-effect">Retos</a>
+                                    <li><a href="retos.html" class="waves-effect">Retos</a>
                                     </li>
                                 </ul>
                             </div>
@@ -123,48 +126,9 @@
     <!--Main layout-->
     <main>
         <div class="container-fluid">
-            <div class="row">
-                <header class="col-md-12 mb-3">
-                    <h1 class="main-title">
-                        <!--<i class="material-icons">book</i>--> 
-                        Mis cursos <i class="fa fa-book"></i>
-                    </h1>
-                </header>
-                <div class="col-md-3">
-                    <div class="list-group">
-                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
-                            <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">Algorítmica 3</h5>
-                            <small>Hace 3 días</small>
-                            </div>
-                            <p class="mb-1">
-                                Se subió un nuevo reto para el curso, puedes verificarlo en la pestaña 'Retos'
-                            </p>
-                            <small>Visto por todos</small>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                            <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">Interfaz Hombre Computador</h5>
-                            <small>Hace 4 días</small>
-                            </div>
-                            <p class="mb-1">
-                                Se subió un nuevo reto para el curso, puedes verificarlo en la pestaña 'Retos'
-                            </p>
-                            <small>Visto por 15</small>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
-                            <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">Base de Datos 3</h5>
-                            <small>Hace 5 días</small>
-                            </div>
-                            <p class="mb-1">
-                                Se subió un nuevo reto para el curso, puedes verificarlo en la pestaña 'Retos'
-                            </p>
-                            <small>Visto por 10</small>
-                        </a>
-                    </div>
+            <div class="col-md-8 mb-5">
+                    <div id="calendar"></div>
                 </div>
-            </div>
         </div>
     </main>
     <!--/Main layout-->
@@ -180,13 +144,22 @@
 
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.js"></script>
-    <script>
+    
+    <script type="text/javascript" src="js/moment.min.js"></script>
 
+    <script type="text/javascript" src="js/fullcalendar.min.js"></script>
+
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.js"></script>
+    <script>
         // SideNav Initialization
         $(".button-collapse").sideNav();
-        
         new WOW().init();
-    
+
+        // Inicializar calendar
+        $('#calendar').fullCalendar({
+            aspectRatio: 1.57
+        });
     </script>
     <div class="drag-target" style="left: 0px; touch-action: pan-y; -moz-user-select: none;"></div>
 
