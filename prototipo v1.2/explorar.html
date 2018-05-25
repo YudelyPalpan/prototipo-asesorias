@@ -27,17 +27,17 @@
                 <!-- Logo -->
                 <li>
                     <div class="logo-wrapper waves-light waves-effect waves-light">
-                        <a href="mis_cursos.html"><img src="img/img-logo.png" class="img-fluid flex-center"></a>
+                        <a href="index.html"><img src="img/img-logo.png" class="img-fluid flex-center"></a>
                     </div>
                 </li>
                 <!--/. Logo -->
                 <!--Social-->
                 <li>
                     <ul class="social">
-                        <li><a href="#" class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a></li>
-                        <li><a href="#" class="icons-sm pin-ic"><i class="fa fa-pinterest"> </i></a></li>
-                        <li><a href="#" class="icons-sm gplus-ic"><i class="fa fa-google-plus"> </i></a></li>
-                        <li><a href="#" class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a></li>
+                        <li><a href="https://www.facebook.com" class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a></li>
+                        <li><a href="https://www.pinterest.com" class="icons-sm pin-ic"><i class="fa fa-pinterest"> </i></a></li>
+                        <li><a href="https://www.googleplus.com" class="icons-sm gplus-ic"><i class="fa fa-google-plus"> </i></a></li>
+                        <li><a href="https://www.twitter.com" class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a></li>
                     </ul>
                 </li>
                 
@@ -59,9 +59,9 @@
                         <li><a class="collapsible-header waves-effect arrow-r"><i class="fa fa-search"></i> Explorar<i class="fa fa-angle-down rotate-icon"></i></a>
                             <div class="collapsible-body">
                                 <ul class="list-unstyled">
-                                    <li><a href="#" class="waves-effect">Cursos</a>
+                                    <li><a href="explorar.html" class="waves-effect">Cursos</a>
                                     </li>
-                                    <li><a href="#" class="waves-effect">Tutores</a>
+                                    <li><a href="tutores.html" class="waves-effect">Tutores</a>
                                     </li>
                                 </ul>
                             </div>
@@ -116,49 +116,55 @@
     
     <!--Main layout-->
     <main>
-        
-        <div class="container-fluid text-center">
-
-            <!--Card-->
-            <div class="card">
-                <div class="row">
-                    <!--Card content-->
+       	<div class="container-fluid text-justify">
+            <div class="row">
+                <header class="col-md-12 mb-3">
+                    <center>
+                        <h1 class="main-title display-5">
+                            <!--<i class="material-icons">book</i>--> 
+                            Buscar Cursos 
+                            <!-- Search form -->
+                            <form class="form-inline md-form form-sm">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                                <input class="form-control form-control-sm ml-3 w-75" type="text" 
+                                placeholder="Search" aria-label="Search">
+                            </form>
+                        </h1>
+                    </center>
+                </header>
+           </div>
+           <div class="row">
                     <div class="card-body">
-                        <h5 class="card-title display-4">Buscar Cursos</h5>
-                        <!-- Search form -->
-                        <center><form class="form-inline">
-                            <i class="fa fa-search ml-5 mb-5" aria-hidden="true"></i>
-                            <input class="form-control form-control-sm ml-2 w-75 mb-5" type="text" placeholder="Search" aria-label="Search">
-                        </form></center>
-
-                        <!--Blue select-->
-                        <select class="mdb-select colorful-select dropdown-primary" searchable="Search here..">
-                            <option value="1">Ingenierías</option>
-                            <option value="2">Humanidaes</option>
-                            <option value="3">Ciencias Básicas</option>
-                        </select>
-                        <label>Áreas</label>
-
-                        <!--Blue select-->
-                        <select class="mdb-select colorful-select dropdown-primary" searchable="Search here..">
-                            <option value="1">Ing. de Sistemas</option>
-                            <option value="2">Ciencias Físicas</option>
-                            <option value="3">Educación</option>
-                            <option value="4">Ciencias Economicas</option>
-                            <option value="5">Ciencias Matemáticas</option>
-                        </select>
-                        <label>Carrera</label>
+                        <div class = "row">
+                            <div class="col-md-6">
+                                    <!--Blue select-->
+                                    <select class="mdb-select" searchable="Search here..">
+                                        <option value="1">Ingenierías</option>
+                                        <option value="2">Humanidaes</option>
+                                        <option value="3">Ciencias Básicas</option>
+                                    </select>
+                            </div>
+                            <div class="col-md-6">
+                                    <!--Blue select-->
+                                    <select class="mdb-select" searchable="Search here..">
+                                        <option value="1">Ing. de Sistemas</option>
+                                        <option value="2">Ciencias Físicas</option>
+                                        <option value="3">Educación</option>
+                                        <option value="4">Ciencias Economicas</option>
+                                        <option value="5">Ciencias Matemáticas</option>
+                                    </select>
+                            </div>
+                        </div>
                     </div>
-                    <!--/.Card content-->
-                </div>
+            </div>
                 
                 <div class="card-deck">
                     
                     <!-- Card -->
-                    <div class="card mb-4">
+                    <div class="card mb-4 ml-4">
                           <!-- Card image -->
                           <div class="view overlay">
-                            <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap">
+                            <img class="card-img-top img-thumbnail rounded mx-auto d-block" src="./img/algoritmica.jpeg" alt="Card image cap">
                             <a href="#!">
                                 <div class="mask rgba-white-slight"></div>
                             </a>
@@ -168,11 +174,19 @@
                           <div class="card-body">
 
                             <!-- Title -->
-                            <h4 class="card-title">Curso 1</h4>
+                            <h4 class="card-title text-center">Algorítmica 3</h4>
                             <!-- Text -->
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur modi sint fugit, enim odio asperiores minima nihil magni, repellendus assumenda repudiandae, quo. Magni optio asperiores non ipsa vitae culpa reiciendis.</p>
+                            <p class="card-text">Desarrollar algoritmos con la finalidad de fortalecer los conocimientos adquiridos, poniendo énfasis en la eficiencia algorítmica, y las habilidades de elaboración de soluciones algorítmicas a problemas basados en un conjunto de componentes que deben interactuar entre si.</p>
                             <!-- Button -->
-                            <a href="./tutores.html" class="btn btn-primary">Ver Más</a>
+                            <div class="row">
+                            	<div class="col-3"></div>
+                            	<div class="col-6">
+                            		<a href="./tutores.html" class="btn btn-primary mt-1">Ver Más</a>
+                            	</div>
+                            	<div class="col-3"></div>
+                            	
+                            </div>
+                            
 
                           </div>
                     </div>
@@ -181,7 +195,8 @@
                     <div class="card mb-4">
                           <!-- Card image -->
                           <div class="view overlay">
-                            <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap">
+                            <img class="card-img-top img-thumbnail rounded mx-auto d-block mb-2" src="./img/sistemas-operativos.png" alt="Card image cap">
+                            <!--544*362-->
                             <a href="#!">
                                 <div class="mask rgba-white-slight"></div>
                             </a>
@@ -191,20 +206,28 @@
                           <div class="card-body">
 
                             <!-- Title -->
-                            <h4 class="card-title">Curso 2</h4>
+                            <h4 class="card-title text-center">Sistemas Operativos</h4>
                             <!-- Text -->
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa molestiae, nostrum, officiis sapiente tenetur aut soluta quae ea atque fuga. Quisquam placeat aliquid cumque et officiis, impedit tempora cupiditate adipisci!</p>
+                            <p class="card-text">Conocerás como se estructura un Sistema Operativo, la forma como trabaja internamente el sistema operativo la gestión de los procesos. Daremos un vistazo a los SO predominantes en el mercado actualmente</p>
                             <!-- Button -->
-                            <a href="./tutores.html" class="btn btn-primary">Ver Más</a>
+                            <div class="row">
+                            	<div class="col-3"></div>
+                            	<div class="col-6">
+                            		<a href="./tutores.html" class="btn btn-primary mt-5">Ver Más</a>
+                            	</div>
+                            	<div class="col-3"></div>
+                            	
+                            </div>
+
 
                           </div>
                     </div>
                     <!-- Card -->
                     <!-- Card -->
-                    <div class="card mb-4">
+                    <div class="card mb-4 mr-4">
                           <!-- Card image -->
                           <div class="view overlay">
-                            <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap">
+                            <img class="card-img-top img-thumbnail rounded mx-auto d-block" src="./img/inteligencia-artificial-1.jpg" alt="Card image cap">
                             <a href="#!">
                                 <div class="mask rgba-white-slight"></div>
                             </a>
@@ -214,11 +237,19 @@
                           <div class="card-body">
 
                             <!-- Title -->
-                            <h4 class="card-title">Curso 3</h4>
+                            <h4 class="card-title text-center">Inteligencia Artificial</h4>
                             <!-- Text -->
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione et fuga, quas explicabo asperiores. Libero accusantium sit porro cum, perspiciatis quasi unde exercitationem blanditiis reprehenderit aliquid vel assumenda repellendus maxime!</p>
+                            <p class="card-text">En este curso aprenderemos los conceptos básicos asociados a la Inteligencia Artificial, las escuelas predominantes en esta área. Así como distintos algoritmos para la generación de la inteligencia en el computador</p>
                             <!-- Button -->
-                            <a href="./tutores.html" class="btn btn-primary">Ver Más</a>
+                            <div class="row">
+                            	<div class="col-3"></div>
+                            	<div class="col-6">
+                            		<a href="./tutores.html" class="btn btn-primary mt-5">Ver Más</a>
+                            	</div>
+                            	<div class="col-3"></div>
+                            	
+                            </div>
+                            
 
                           </div>
                     </div>
@@ -274,8 +305,12 @@
         $(".button-collapse").sideNav();
         
         new WOW().init();
+        $(document).ready(function() {
+		    $('.mdb-select').material_select();
+		  });
     
-    </script><div class="drag-target" style="left: 0px; touch-action: pan-y; -moz-user-select: none;"></div>
+    </script>
+    <div class="drag-target" style="left: 0px; touch-action: pan-y; -moz-user-select: none;"></div>
 
 
 
